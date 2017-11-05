@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:Code_05"
+             x:Class="Code_05.MainPage">
+
+    <!--Inserimos uma ScrollView-->
+    <ScrollView>
+        <!--Cor de fundo para todo o background-->
+        <StackLayout x:Name="stackPrincipal" Spacing="0" Padding="0" BackgroundColor="#2D39A8">
+            <!--Faixa cinza na parte superior (grande panorama)-->
+            <BoxView HorizontalOptions="FillAndExpand" HeightRequest="100" VerticalOptions="Start" Color="Gray" />
+            <!--Botão para capturar a foto-->
+            <Button BorderRadius="30" HeightRequest="60" WidthRequest="60" BackgroundColor="#404040" HorizontalOptions="Center" VerticalOptions="Start" Clicked="OnButtonPhotoClicked"/>
+            <!--StackLayout para organizar uma label e uma entry-->
+            <StackLayout x:Name="stackTop" HeightRequest="100" VerticalOptions="Start" HorizontalOptions="FillAndExpand" Spacing="20" BackgroundColor="#2D39A8">
+                <Label Text="Nome do Usuário" FontSize="28" HorizontalOptions="Center" VerticalOptions="Center" FontAttributes="Bold" TextColor="Gray" />
+                <Entry x:Name="entryBio" Text="Bio" TextColor="White" BackgroundColor="#2D39A8" HorizontalOptions="FillAndExpand" VerticalOptions="CenterAndExpand" />
+            </StackLayout>
+            <!--StackLayout para definir a escolha de cores de fundo-->
+            <StackLayout Orientation="Horizontal" HeightRequest="50" BackgroundColor="White" Padding="5">
+                <!--Primeira opção de cores-->
+                <StackLayout Spacing="10" BackgroundColor="White" Orientation="Horizontal" HorizontalOptions="Start">
+                    <Button ClassId="btnBotaoBlack"  BackgroundColor="#303030" WidthRequest="40" HeightRequest="40"  HorizontalOptions="StartAndExpand" VerticalOptions="Center" Clicked="OnButtonCorClicked" />
+                    <Label FontSize="14" TextColor="Black" Text="Escuro" HorizontalOptions="StartAndExpand" VerticalOptions="Center" />
+                </StackLayout>
+                <!--Segunda opção de cores-->
+                <StackLayout Spacing="10" BackgroundColor="White" Orientation="Horizontal" HorizontalOptions="EndAndExpand">
+                    <Button x:Name="btnMaroon"  BackgroundColor="#2D39A8" WidthRequest="40" HeightRequest="40" HorizontalOptions="Start" VerticalOptions="Center"  Clicked="OnButtonCorClicked"/>
+                    <Label FontSize="14" TextColor="Black" Text="Padrão" HorizontalOptions="StartAndExpand" VerticalOptions="Center" />
+                </StackLayout>
+            </StackLayout>
+            <!--StackLayout para componentes da idade-->
+            <StackLayout Orientation="Horizontal">
+                <Label FontSize="14" Text="Idade:" TextColor="White" HorizontalOptions="Start" VerticalOptions="Center" WidthRequest="100" />
+                <Entry x:Name="entryIdade" HorizontalOptions="FillAndExpand" Text="25" TextColor="White" BackgroundColor="#2D39A8" />
+            </StackLayout>
+            <!--StackLayout para componentes de interesses-->
+            <StackLayout Orientation="Horizontal">
+                <Label FontSize="14" Text="Interesses:" TextColor="White" HorizontalOptions="Start" VerticalOptions="Center" WidthRequest="100" />
+                <Entry x:Name="entryInteresse" HorizontalOptions="FillAndExpand" Text="Mobile, Xamarin, Android, C#" TextColor="White" BackgroundColor="#2D39A8" />
+            </StackLayout>
+            <!--StackLayout para componentes de especialidades-->
+            <StackLayout Orientation="Horizontal">
+                <Label FontSize="14" Text="Especialidades:" TextColor="White" HorizontalOptions="Start" VerticalOptions="Center" WidthRequest="100"/>
+                <Entry x:Name="entryEspecialidade" HorizontalOptions="FillAndExpand" Text="Xamarin, Linux" TextColor="White" BackgroundColor="#2D39A8" />
+            </StackLayout>
+            <!--Uma BoxView para vermos o efeito do Scroll-->
+            <BoxView HorizontalOptions="FillAndExpand" HeightRequest="400" VerticalOptions="Start" Color="Gray" />
+
+        </StackLayout>
+
+
+
+    </ScrollView>
+
+</ContentPage>

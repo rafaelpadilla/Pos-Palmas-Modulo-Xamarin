@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Code_03.Pages.Page01">
+
+    <!--Criamos um Layout (Stack Layout) para organizarmos nossos componentes-->
+    <!--Padding= left, top, right, and bottom -->
+    <!--Spacing: propriedade que define espaçamento entre um item e outro dentro do StackLayout-->
+    <StackLayout Padding="0,0,0,0" Spacing="20">
+        
+        <!--Margin é aplicada no left, top, right e bottom.-->
+        <Label Text="Este será o maior texto desta tela que estamos criando neste momento." 
+               Margin="0" BackgroundColor="DarkGray"/> <!--Teste diferentes valores com a margin para ver a mudança-->
+        
+        <!--Somente valores horizontais e verticais-->
+        <Label Text="Texto 1" Margin="5,40" BackgroundColor="Blue"/> <!--Teste diferentes valores do Spacing para ver a mudança-->
+        <Label Text="Texto 2" Margin="15,15" BackgroundColor="LightGray"/>
+        <Button Text="Botão" BackgroundColor="Blue" Margin="0"/>
+
+    </StackLayout>
+</ContentPage>

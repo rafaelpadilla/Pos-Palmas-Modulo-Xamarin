@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:Code_04"
+             x:Class="Code_04.MainPage">
+
+    <!--****StackLayout com Orientation=Horizontal****-->
+    <!--<StackLayout x:Name="layout" Orientation="Horizontal">
+        <Button Text="Start" VerticalOptions="Start"/>
+        <Button Text="Fill" VerticalOptions="Fill"/>
+        <Button Text="Center" VerticalOptions="Center"/>
+        <Button Text="End" VerticalOptions="End"/>
+    </StackLayout>-->
+
+    
+    <!--****StackLayout com Orientation=Vertical****-->
+    <!--****Orientation default: Vertical****-->
+    <!--****Começa com Spacing=0 e depois muda para Spacing=10****-->
+    <!--<StackLayout x:Name="layout" Orientation="Vertical" Spacing="0">
+        <Button Text="StackLayout" VerticalOptions="Start" HorizontalOptions="FillAndExpand" />
+        <BoxView Color="Yellow" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" />
+        <BoxView Color="Green" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" />
+        <BoxView HeightRequest="75" Color="Blue" VerticalOptions="End" HorizontalOptions="FillAndExpand" />
+    </StackLayout>-->
+
+</ContentPage>

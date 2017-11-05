@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:Code_06"
+             x:Class="Code_06.MainPage"
+             Title = "Calculator - XAML"
+             BackgroundColor="#404040">
+
+    <!--Aplicação de Calculadora Sem o uso de Resources-->
+    <Grid x:Name="controlGrid" RowSpacing="0" ColumnSpacing="0">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="150" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+        <!--Primeira linha-->
+        <Label x:Name="lblNumero" Text="0" Grid.Row="0" Grid.ColumnSpan="4" HorizontalTextAlignment="End" VerticalTextAlignment="End" TextColor="White" FontSize="60" />
+        <!--Segunda linha-->
+        <Button Text="C" Grid.Row="1" Grid.Column="0" BackgroundColor="#ddd" TextColor="Black" BorderRadius="0" FontSize="40" Clicked="OnButtonClearClicked"/>
+        <Button ClassId="btnMaisouMenos" Text="+/-" Grid.Row="1" Grid.Column="1" BackgroundColor="#ddd" TextColor="Black" BorderRadius="0" FontSize="40" Clicked="OnButtonMaisOuMenosClicked"/>
+        <Button ClassId="btnPorcentagem" Text="%" Grid.Row="1" Grid.Column="2" BackgroundColor="#ddd" TextColor="Black" BorderRadius="0" FontSize="40" />
+        <Button x:Name="btnDivisao" ClassId="btnDivisao" Text="div" Grid.Row="1" Grid.Column="3" BackgroundColor="#E8AD00" TextColor="White" BorderRadius="0" FontSize="40" Clicked="OnButtonOperacaoClicked"/>
+        <!--Terceira linha-->
+        <Button ClassId="btn7" Text="7" Grid.Row="2" Grid.Column="0" BackgroundColor="#eee" TextColor="Black" BorderRadius="0" FontSize="40" Clicked="OnButtonNumberClicked"/>
+        <Button ClassId="btn8" Text="8" Grid.Row="2" Grid.Column="1" BackgroundColor="#eee" TextColor="Black" BorderRadius="0" FontSize="40" Clicked="OnButtonNumberClicked"/>
+        <Button ClassId="btn9" Text="9" Grid.Row="2" Grid.Column="2" BackgroundColor="#eee" TextColor="Black" BorderRadius="0" FontSize="40" Clicked="OnButtonNumberClicked"/>
+        <Button x:Name="btnMultiplicacao" ClassId="btnMultiplicacao" Text="X" Grid.Row="2" Grid.Column="3" BackgroundColor="#E8AD00" TextColor="White" BorderRadius="0" FontSize="40" Clicked="OnButtonOperacaoClicked"/>
+        <!--Quarta linha-->
+        <Button ClassId="btn4" Text="4" Grid.Row="3" Grid.Column="0" BackgroundColor="#eee" TextColor="Black" BorderRadius="0" FontSize="40" Clicked="OnButtonNumberClicked"/>
+        <Button ClassId="btn5" Text="5" Grid.Row="3" Grid.Column="1" BackgroundColor="#eee" TextColor="Black" BorderRadius="0" FontSize="40" Clicked="OnButtonNumberClicked"/>
+        <Button ClassId="btn6" Text="6" Grid.Row="3" Grid.Column="2" BackgroundColor="#eee" TextColor="Black" BorderRadius="0" FontSize="40" Clicked="OnButtonNumberClicked"/>
+        <Button x:Name="btnSubtracao" ClassId="btnSubtracao" Text="-" Grid.Row="3" Grid.Column="3" BackgroundColor="#E8AD00" TextColor="White" BorderRadius="0" FontSize="40" Clicked="OnButtonOperacaoClicked"/>
+        <!--Quinta linha-->
+        <Button ClassId="btn1" Text="1" Grid.Row="4" Grid.Column="0" BackgroundColor="#eee" TextColor="Black" BorderRadius="0" FontSize="40" Clicked="OnButtonNumberClicked"/>
+        <Button ClassId="btn2" Text="2" Grid.Row="4" Grid.Column="1" BackgroundColor="#eee" TextColor="Black" BorderRadius="0" FontSize="40" Clicked="OnButtonNumberClicked"/>
+        <Button ClassId="btn3" Text="3" Grid.Row="4" Grid.Column="2" BackgroundColor="#eee" TextColor="Black" BorderRadius="0" FontSize="40" Clicked="OnButtonNumberClicked"/>
+        <Button x:Name="btnSoma" ClassId="btnSoma" Text="+" Grid.Row="4" Grid.Column="3" BackgroundColor="#E8AD00" TextColor="White" BorderRadius="0" FontSize="40" Clicked="OnButtonOperacaoClicked"/>
+        <!--Sexta linha-->
+        <Button ClassId="btn0" Text="0" Grid.Row="5" Grid.ColumnSpan = "2" BackgroundColor="#eee" TextColor="Black" BorderRadius="0" FontSize="40" Clicked="OnButtonNumberClicked"/>
+        <Button ClassId="btnVirgula" Text="." Grid.Row="5" Grid.Column="2" BackgroundColor="#eee" TextColor="Black" BorderRadius="0" FontSize="40" Clicked="OnButtonVirgulaClicked"/>
+        <Button ClassId="btnResultado" Text="=" Grid.Row="5" Grid.Column="3" BackgroundColor="#E8AD00" TextColor="White" BorderRadius="0" FontSize="40" Clicked="OnButtonResultadoClicked"/>
+    </Grid>
+
+</ContentPage>
