@@ -33,15 +33,15 @@
 
 ## Conteúdo: 
 
-Estão disponibilizados os slides das aulas por parte:
+Slides das aulas:
 
-* [Slides Aula Parte 1]: 04 e 05 de novembro [Aula não realizada]
+* [Slides Aula Parte 1](https://github.com/rafaelpadilla/Pos-Palmas-Modulo-Xamarin/blob/master/Docs/Aula_V1%20-%20Parte%201.pdf): 04 e 05 de novembro
 * [Slides Aula Parte 2]: 18 e 19 de novembro [Aula não realizada]
 
 ## Plano de Ensino
 
-Acesse [aqui](https://github.com/rafaelpadilla/Pos-Palmas/blob/master/Docs/PLANO%20DE%20ENSINO%20-%20C%23.pdf) o plano de ensino da disciplina.
-				  
+Acesse [aqui] o plano de ensino da disciplina.
+
 ## Códigos em sala:
 
 * [Code 01](https://github.com/rafaelpadilla/Pos-Palmas-Modulo-Xamarin/tree/master/Codes/Code%2001) : Olá mundo
@@ -71,12 +71,13 @@ A avaliação será feita através da execução de 2 projetos. Para cada projet
 * Projeto consistente com as instruções
 * Código comentado
 * Nomenclatura de variáveis, métodos e classes seguindo o padrão C#
+* (Exclusivo para o 2º desafio) Utilização de recursos como GPS, acelerômetro, consumo de webservices, JSON, XML, câmera, etc.
 
 **Desafios:**
 * Projeto 1 : Calculadora
 * Desafio 2 : Livre
 
-Clique [aqui] para acessar os enunciados dos desafios.
+Clique [aqui](https://github.com/rafaelpadilla/Pos-Palmas-Modulo-Xamarin/blob/master/Docs/Desafios.pdf) para acessar os enunciados dos desafios.
 
 ## Contato
 
