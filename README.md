@@ -1,6 +1,4 @@
-# Curso de Pós-Graduação em **Desenvolvimento de Software para Dispositivos Móveis ** (Católica-TO)
-
-## Módulo Xamarin
+# Curso de Pós-Graduação em **Desenvolvimento de Software para Dispositivos Móveis (Módulo: Xamarin)** (Católica-TO) 
 
 ## Informações Gerais:
 
