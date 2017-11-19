@@ -1,0 +1,8 @@
+﻿<Application
+    x:Class="Code_12.UWP.App"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Code_12.UWP"
+    RequestedTheme="Light">
+
+</Application>

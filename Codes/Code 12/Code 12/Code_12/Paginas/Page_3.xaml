@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Code_12.Paginas.Page_3"
+             Title="Página 3">
+    <StackLayout>
+        <Button Text="Próxima Página" Clicked="Button_Proximo_Clicked"/>
+        <Button Text="Página Anterior" Clicked="Button_Anterior_Clicked"/>
+    </StackLayout>
+</ContentPage>

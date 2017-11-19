@@ -1,0 +1,150 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:Code_08"
+             x:Class="Code_08.MainPage">
+
+    <ContentPage.Content>
+        <ScrollView>
+            
+            <!--Cor de fundo para todo o background-->
+            <AbsoluteLayout x:Name="lytPrincipal" BackgroundColor="#2D39A8">
+                <!--Faixa cinza na parte superior (grande panorama)-->
+                <!--Altura absoluta de 100px--> 
+                <BoxView BackgroundColor="Gray" 
+                         AbsoluteLayout.LayoutBounds="0,0,1,100" 
+                         AbsoluteLayout.LayoutFlags="XProportional,YProportional,WidthProportional" />
+                <!--Este botão é a borda do botão para capturar a foto-->
+                <!--XProportional = X é proporcional e todos outros valores são absolutos.-->
+                <!--No Windows Phone este botão não permite ser arredondado (definido pela propriedade "BorderRadius")-->
+                <!--Referência https://developer.xamarin.com/guides/xamarin-forms/user-interface/layouts/absolute-layout/Images/abs.png-->
+                <!--X: metade do absolute layout pai, Y=55 pixels do absolte layout do pai -->
+                <Button x:Name="btnBorderImage"
+                        BackgroundColor="#2D39A8"
+                        AbsoluteLayout.LayoutBounds=".5,55,70,70" 
+                        AbsoluteLayout.LayoutFlags="XProportional" 
+                        BorderRadius="35" />
+                <!--Este é o botão para capturar a foto-->
+                <Button BackgroundColor="#404040" 
+                        AbsoluteLayout.LayoutBounds=".5,60,60,60" 
+                        AbsoluteLayout.LayoutFlags="XProportional" 
+                        BorderRadius="30" />
+                <!--Label com o nome do usuário-->
+                <!--Width=100% para que o texto fique centralizado na tela-->
+                <Label Text="Nome do Usuário" 
+                       FontAttributes="Bold" 
+                       FontSize="26"
+                       TextColor="Black" 
+                       HorizontalTextAlignment="Center" 
+                       AbsoluteLayout.LayoutBounds=".5,140,1,35" 
+                       AbsoluteLayout.LayoutFlags="XProportional,WidthProportional" />
+                <!--Bio com uma curta descrição sobre o usuário-->
+                <Entry Text="Bio" 
+                       x:Name="entryBio"
+                       TextColor="White"
+                       BackgroundColor="#2D39A8" 
+                       AbsoluteLayout.LayoutBounds="0,180,1,40" 
+                       AbsoluteLayout.LayoutFlags="WidthProportional" />
+                
+                <!--Outro Layout para colocar opções de mudança de cor de fundo-->
+                <!--Se colocar YProportional e setar o LayoutBounds de Y para .5, ele ficará no meio da tela-->
+                <AbsoluteLayout BackgroundColor="White"
+                                AbsoluteLayout.LayoutBounds="0,220,1,50" 
+                                AbsoluteLayout.LayoutFlags="XProportional,WidthProportional">
+                    <!--Outro Layout para colocar opções de mundaça para cor escura-->
+                    <!--Os Bounds são sempre em relação ao componente pai-->
+                    <AbsoluteLayout AbsoluteLayout.LayoutBounds="0,0,.5,1" 
+                                AbsoluteLayout.LayoutFlags="WidthProportional,HeightProportional">
+                        <!--Botão com cor preta-->
+                        <!--Y=Metade do componente pai-->
+                        <Button ClassId="btnBotaoBlack" BackgroundColor="#303030" 
+                            BorderRadius="20"
+                            AbsoluteLayout.LayoutBounds="5,.5,40,40" 
+                            AbsoluteLayout.LayoutFlags="YProportional" 
+                            Clicked="OnButtonCorClicked"/>
+                        <!--Label informando a cor "Escuro" para o fundo-->               
+                        <Label Text="Escuro" TextColor="Black"
+                               AbsoluteLayout.LayoutBounds="50,.55,1,25" 
+                               AbsoluteLayout.LayoutFlags="YProportional,WidthProportional" />
+                    </AbsoluteLayout>
+                    <!--Layout para colocar opções de mundaça para cor padrão-->
+                    <AbsoluteLayout AbsoluteLayout.LayoutBounds="1,0,.5,1" 
+                                    AbsoluteLayout.LayoutFlags="WidthProportional,HeightProportional,XProportional">
+                        <!--Botão com cor padrão maroon-->
+                        <Button ClassId="btnBotaoMaroon" BackgroundColor="#2D39A8" 
+                                BorderRadius="20"
+                                AbsoluteLayout.LayoutBounds="5,.5,40,40" 
+                                AbsoluteLayout.LayoutFlags="YProportional"
+                                Clicked="OnButtonCorClicked"/>
+                        <!--Label informando a cor "Padrão" para o fundo-->
+                        <Label Text="Padrão" 
+                               TextColor="Black"
+                               AbsoluteLayout.LayoutBounds="50,.55,1,25" 
+                               AbsoluteLayout.LayoutFlags="YProportional,WidthProportional" />
+                    </AbsoluteLayout>
+                </AbsoluteLayout>
+                
+                <!--Layout para conter informações da idade-->
+                <AbsoluteLayout AbsoluteLayout.LayoutBounds="0,270,1,50" 
+                                AbsoluteLayout.LayoutFlags="WidthProportional" 
+                                Padding="5,0,0,0">
+                    <!--Label idade-->
+                    <Label Text="Idade:" 
+                           TextColor="White"
+                           AbsoluteLayout.LayoutBounds="0,25,.30,50" 
+                           AbsoluteLayout.LayoutFlags="WidthProportional" />
+                    <!--Entry para usuário informar sua idade-->
+                    <!--Começa em X=100% para começar do lado direito da tela (rencolhida do lado direito)
+                    e aumentamos mexendo na largura proporcional-->
+                    <Entry x:Name="entryIdade"
+                           Text="25" 
+                           TextColor="White" 
+                           BackgroundColor="#2D39A8"
+                           AbsoluteLayout.LayoutBounds="1,10,.73,50" 
+                           AbsoluteLayout.LayoutFlags="XProportional,WidthProportional" />
+                </AbsoluteLayout>
+                <!--Layout para conter informações dos interesses-->
+                <!--Distancia de 50px (320-270) em relação ao de idade-->
+                <AbsoluteLayout AbsoluteLayout.LayoutBounds="0,320,1,50" 
+                                AbsoluteLayout.LayoutFlags="WidthProportional" 
+                                Padding="5,0,0,0">
+                    <!--Label interesses-->
+                    <Label Text="Interesses:" 
+                           TextColor="White"
+                           AbsoluteLayout.LayoutBounds="0,25,.30,50" 
+                           AbsoluteLayout.LayoutFlags="WidthProportional" />
+                    <!--Entry para usuário informar seus interesses-->
+                    <Entry x:Name="entryInteresse" 
+                           Text="Mobile, Xamarin, Android, C#" 
+                           TextColor="White"
+                           BackgroundColor="#2D39A8" 
+                           AbsoluteLayout.LayoutBounds="1,10,.73,50"
+                           AbsoluteLayout.LayoutFlags="XProportional,WidthProportional" />
+                </AbsoluteLayout>
+                <!--Layout para conter informações das especialidades-->
+                <!--Distancia de 50px (370-320) em relação ao de idade-->
+                <AbsoluteLayout AbsoluteLayout.LayoutBounds="0,370,1,50" 
+                                AbsoluteLayout.LayoutFlags="WidthProportional" 
+                                Padding="5,0,0,0">
+                    <!--Label especialidades-->
+                    <Label Text="Especialidades:" 
+                           TextColor="White"
+                           AbsoluteLayout.LayoutBounds="0,25,.30,50" 
+                           AbsoluteLayout.LayoutFlags="WidthProportional" />
+                    <!--Entry para usuário informar suas especialidades-->
+                    <Entry x:Name="entryEspecialidade"
+                           Text="Xamarin, Linux" 
+                           TextColor="White"
+                           BackgroundColor="#2D39A8" 
+                           AbsoluteLayout.LayoutBounds="1,10,.73,50"
+                           AbsoluteLayout.LayoutFlags="XProportional,WidthProportional" />
+                    
+                    <!--Próximo exemplo seria com RelativeLayout, que é bastante útil com 
+                    tablets, pois é para se ajustar a tamanhos bem diferentes de telas,
+                    mas neste curso trabalhamos só com mobile, então não veremos RelativeLayout -->
+                </AbsoluteLayout>
+            </AbsoluteLayout>
+            
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

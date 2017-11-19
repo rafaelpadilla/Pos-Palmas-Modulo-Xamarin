@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:Code_16"
+             x:Class="Code_16.MainPage">
+
+    <StackLayout x:Name="stackLayout">
+        <Label Text="Imagem 1"/>
+        <Button Text="Carregar imagem local" Clicked="CarregarImg1_Clicked"/>
+        <Button Text="Carregar imagem web" Clicked="CarregarImg2_Clicked"/>
+        <Image x:Name="img1"/>
+
+        
+    </StackLayout>
+
+</ContentPage>

@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:Code_13"
+             x:Class="Code_13.MainPage">
+
+    <StackLayout>
+        <Button Text="DisplayAlert (simples)" Clicked="Button_SimplesDisplayAlert_Clicked" />
+        <Button Text="DisplayAlert (com opções)" Clicked="Button_OpcoesDisplayAlert_Clicked" />
+        <Button Text="DisplayActionSheet (com opções)" Clicked="Button_DisplayActionSheet_Clicked" />
+        <Label x:Name="lblResposta" Text=""/>
+    </StackLayout>
+	
+
+</ContentPage>

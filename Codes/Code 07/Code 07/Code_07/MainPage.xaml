@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:Code_07"
+             x:Class="Code_07.MainPage">
+
+    <ContentPage.Content>
+        <AbsoluteLayout>
+           
+            <!--Com AbsoluteLayoutFlags=None, os valores em LayoutBounds são absolutos!!! Como eu sei o tamanho da tela do iphone 4,
+                passo os valores centrais do iphone 4-->
+            <!--AbsoluteLayout.LayoutBounds = X,Y,Width,Height-->
+            <!--Eh o que chamamos de Absolute Values, pois são valores absolutos à tela-->
+            <!--Isso nos permite ter componentes overlapped (um sobre o outro) Ver Code 08-->
+            <Label AbsoluteLayout.LayoutFlags="None" 
+                   Text="Centrada no iPhone 4 mas não em outros aparelhos"
+                   AbsoluteLayout.LayoutBounds="115,150,100,100" 
+                   LineBreakMode="WordWrap"  />
+           
+            <!--Com AbsoluteLayout.LayoutFlags=All, todas as coordenadas de LayoutBounds são proporcionais-->
+            <!--Neste exemplo X=metade da largura, Y=100% da altura, Widht=metade da largura, Height=10% da altura-->
+            <!--Eh o que chamamos de Proporcional Values, pois são proporcionais à tela-->
+            <Label Text="Centrada na parte inferior de todos aparelho."
+                   AbsoluteLayout.LayoutBounds=".5,1,.5,.1" 
+                   AbsoluteLayout.LayoutFlags="All"
+                   LineBreakMode="WordWrap"  />
+          
+            <!--Com PositionProportional, os valores X e Y são proporcionais e os tamanhos Width e Height são absolutos-->
+            <!--Neste exemplo X = está docado 100% da largura, Y = metade da altura, com largura = 25 pixels e altura = 100 pixels-->
+            <BoxView Color="Olive"  
+                     AbsoluteLayout.LayoutBounds="1,.5, 25, 100"
+                     AbsoluteLayout.LayoutFlags="PositionProportional" />
+           
+            <!--Com PositionProportional, os valores X e Y são proporcionais e os tamanhos Width e Height são absolutos-->
+            <!--Neste exemplo X = está docado 0% da largura, Y = metade da altura, com largura = 25 pixels e altura = 100 pixels-->
+            <BoxView Color="Red" 
+                     AbsoluteLayout.LayoutBounds="0,.5,25,100"
+                     AbsoluteLayout.LayoutFlags="PositionProportional" />
+            <!--Com PositionProportional, os valores X e Y são proporcionais e os tamanhos Width e Height são absolutos-->
+            <!--Neste exemplo X = está docado metade da largura, Y = início da altura, com largura = 100 pixels e altura = 25 pixels-->
+            <BoxView Color="Blue" 
+                     AbsoluteLayout.LayoutBounds=".5,0,100,25"
+                     AbsoluteLayout.LayoutFlags="PositionProportional" />
+            
+        </AbsoluteLayout>
+    </ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:Code_15"
+             x:Class="Code_15.MainPage">
+
+        <StackLayout>
+        
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+            <Label Text="Nome:" Grid.Row="0" Grid.Column="0" HorizontalTextAlignment="Start" />
+            <Label Text="{Binding Nome}" Grid.Row="0" Grid.Column="1" HorizontalTextAlignment="Start"  />
+
+            <Label Text="Idade:" Grid.Row="1" Grid.Column="0" HorizontalTextAlignment="Start"  />
+            <Label Text="{Binding Idade}" Grid.Row="1" Grid.Column="1" HorizontalTextAlignment="Start"  />
+
+            <Label Text="Profissão:" Grid.Row="2" Grid.Column="0" HorizontalTextAlignment="Start"  />
+            <Label Text="{Binding Profissao}" Grid.Row="2" Grid.Column="1" HorizontalTextAlignment="Start"  />
+
+            <Label Text="Cor favorita:" Grid.Row="3" Grid.Column="0" HorizontalTextAlignment="Start"  />
+            <Label Text="{Binding CorFavorita}" Grid.Row="3" Grid.Column="1" HorizontalTextAlignment="Start"  />
+
+        </Grid>
+
+    </StackLayout>
+
+</ContentPage>

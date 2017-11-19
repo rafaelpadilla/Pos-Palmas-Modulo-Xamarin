@@ -1,0 +1,117 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<TabbedPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Code_14.TabbedPage1">
+  <!--Pages can be added as references or inline-->
+    <ContentPage Title="Jogador 1">
+        <StackLayout Padding="5, 25">
+            <Label Text="Juninho Pernambucano"
+                 Font="Bold,Large"
+                 HorizontalOptions="Center" />
+            <Image WidthRequest="200" HeightRequest="200" />
+            <StackLayout Padding="50, 10">
+                <StackLayout Orientation="Horizontal">
+                    <Label Text="Nome:"
+                     HorizontalOptions="FillAndExpand" />
+                    <Label Text="Antônio Augusto Ribeiro Reis Júnior" Font="Bold,Medium" />
+                </StackLayout>
+                <StackLayout Orientation="Horizontal">
+                    <Label Text="Nacionalidade:"
+                     HorizontalOptions="FillAndExpand" />
+                    <Label Text="brasieira" Font="Bold,Medium" />
+                </StackLayout>
+                <StackLayout Orientation="Horizontal">
+                    <Label Text="Natural de:"
+                     HorizontalOptions="FillAndExpand" />
+                    <Label Text="Recife - PE" Font="Bold,Medium" />
+                </StackLayout>
+                <StackLayout Orientation="Horizontal">
+                    <Label Text="Idade:"
+                      HorizontalOptions="FillAndExpand" />
+                    <Label Text="42"
+                     Font="Bold,Medium" />
+                </StackLayout>
+                <StackLayout Orientation="Horizontal">
+                    <Label Text="Clube atual:"
+                     HorizontalOptions="FillAndExpand" />
+                    <Label Text="Sport Clube Recife"
+                     Font="Bold,Medium" />
+                </StackLayout>
+            </StackLayout>
+        </StackLayout>
+    </ContentPage>
+    <ContentPage Title="Jogador 2">
+        <StackLayout Padding="5, 25">
+            <Label Text="Romário"
+                 Font="Bold,Large"
+                 HorizontalOptions="Center" />
+            <Image WidthRequest="200" HeightRequest="200" />
+            <StackLayout Padding="50, 10">
+                <StackLayout Orientation="Horizontal">
+                    <Label Text="Nome:"
+                     HorizontalOptions="FillAndExpand" />
+                    <Label Text="Romário de Souza Faria" Font="Bold,Medium" />
+                </StackLayout>
+                <StackLayout Orientation="Horizontal">
+                    <Label Text="Nacionalidade:"
+                     HorizontalOptions="FillAndExpand" />
+                    <Label Text="brasieira" Font="Bold,Medium" />
+                </StackLayout>
+                <StackLayout Orientation="Horizontal">
+                    <Label Text="Natural de:"
+                     HorizontalOptions="FillAndExpand" />
+                    <Label Text="Rio de Janeiro - RJ" Font="Bold,Medium" />
+                </StackLayout>
+                <StackLayout Orientation="Horizontal">
+                    <Label Text="Idade:"
+                      HorizontalOptions="FillAndExpand" />
+                    <Label Text="51"
+                     Font="Bold,Medium" />
+                </StackLayout>
+                <StackLayout Orientation="Horizontal">
+                    <Label Text="Clube atual:"
+                     HorizontalOptions="FillAndExpand" />
+                    <Label Text="Aposentado"
+                     Font="Bold,Medium" />
+                </StackLayout>
+            </StackLayout>
+        </StackLayout>
+    </ContentPage>
+    <ContentPage Title="Jogador 3">
+        <StackLayout Padding="5, 25">
+            <Label Text="Kaká"
+                 Font="Bold,Large"
+                 HorizontalOptions="Center" />
+            <Image WidthRequest="200" HeightRequest="200" />
+            <StackLayout Padding="50, 10">
+                <StackLayout Orientation="Horizontal">
+                    <Label Text="Nome:"
+                     HorizontalOptions="FillAndExpand" />
+                    <Label Text="Ricardo Izecson dos Santos Leite" Font="Bold,Medium" />
+                </StackLayout>
+                <StackLayout Orientation="Horizontal">
+                    <Label Text="Nacionalidade:"
+                     HorizontalOptions="FillAndExpand" />
+                    <Label Text="brasieira" Font="Bold,Medium" />
+                </StackLayout>
+                <StackLayout Orientation="Horizontal">
+                    <Label Text="Natural de:"
+                     HorizontalOptions="FillAndExpand" />
+                    <Label Text="Gama - DF" Font="Bold,Medium" />
+                </StackLayout>
+                <StackLayout Orientation="Horizontal">
+                    <Label Text="Idade:"
+                      HorizontalOptions="FillAndExpand" />
+                    <Label Text="35"
+                     Font="Bold,Medium" />
+                </StackLayout>
+                <StackLayout Orientation="Horizontal">
+                    <Label Text="Clube atual:"
+                     HorizontalOptions="FillAndExpand" />
+                    <Label Text="Orlando City SC"
+                     Font="Bold,Medium" />
+                </StackLayout>
+            </StackLayout>
+        </StackLayout>
+    </ContentPage>
+</TabbedPage>

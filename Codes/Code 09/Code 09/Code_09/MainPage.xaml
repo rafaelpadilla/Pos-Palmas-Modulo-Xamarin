@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:Code_09"
+             x:Class="Code_09.MainPage">
+
+    <!--LayoutOptions é tipo um enum que pode receber os valores com ou sem o sufixo AndExpand-->
+    <!--Alignment – O alinhamento que a view (componente) solicita. Ele determina a posicao e o tamanho relativo ao layout do pai.-->
+    <StackLayout Margin="0,20,0,0">
+        <Label Text="Início" BackgroundColor="Gray" HorizontalOptions="Start" />
+        <Label Text="Centralizado" BackgroundColor="Gray" HorizontalOptions="Center" />
+        <Label Text="Fim" BackgroundColor="Gray" HorizontalOptions="End" />
+        <Label Text="Fill" BackgroundColor="Gray" HorizontalOptions="Fill" />
+    </StackLayout>
+
+    <!--Expansion – Usado apenas pelo StackLayout e indica se a view (componente) deve usar algum espaço extra se estiver disponível-->
+    <!--The unused space is shared equally by all child views that request expansion 
+        by setting their HorizontalOptions or VerticalOptions properties to a LayoutOptions 
+        field that uses the AndExpand suffix. 
+        Note that when all the space in the StackLayout is used, the expansion options 
+        have no effect.-->
+    <!--Primeiro tenta sem o "AndExpand", depois insere o "AndExpand" em todas as 
+        VerticalOptions (Ex: VerticalOptions="Start"->VerticalOptions="StartAndExpand")-->
+    <StackLayout Margin="0,20,0,0">
+        <!--Só uma linha pra separar-->
+        <BoxView BackgroundColor="Red" HeightRequest="1" />
+        <Label Text="Start" BackgroundColor="Gray" VerticalOptions="Start" />
+        <!--Só uma linha pra separar-->
+        <BoxView BackgroundColor="Red" HeightRequest="1" />
+        <Label Text="Center" BackgroundColor="Gray" VerticalOptions="Center" />
+        <!--Só uma linha pra separar-->
+        <BoxView BackgroundColor="Red" HeightRequest="1" />
+        <Label Text="End" BackgroundColor="Gray" VerticalOptions="End" />
+        <!--Só uma linha pra separar-->
+        <BoxView BackgroundColor="Red" HeightRequest="1" />
+        <Label Text="Fill" BackgroundColor="Gray" VerticalOptions="Fill" />
+        <!--Só uma linha pra separar-->
+        <BoxView BackgroundColor="Red" HeightRequest="1" />
+    </StackLayout>
+
+    <!--Exemplo com um stack na horizontal-->
+    <!--Note que quando colocamos HorizontalOptions="FillaAndExpand", 
+        ele distribui horizontalmente como fizemos no exemplo anterior que era verticalmente-->
+    <!--<StackLayout Margin="0,20,0,0" Orientation="Horizontal">
+        <Label Text="Fill" BackgroundColor="Gray" HorizontalOptions="FillAndExpand" />
+        <Label Text="Fill" BackgroundColor="Gray" HorizontalOptions="FillAndExpand" />
+        <Label Text="Fill" BackgroundColor="Gray" HorizontalOptions="FillAndExpand" />
+        <Label Text="Fill" BackgroundColor="Gray" HorizontalOptions="FillAndExpand" />
+    </StackLayout>-->
+    
+</ContentPage>

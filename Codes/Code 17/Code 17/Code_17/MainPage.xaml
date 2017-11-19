@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:Code_17"
+             x:Class="Code_17.MainPage">
+
+    <ListView x:Name="JogadoresView" HasUnevenRows="True">
+
+        <ListView.ItemTemplate>
+            <DataTemplate>
+
+                <ViewCell>
+                    <ViewCell.View>
+
+                        <StackLayout>
+                            <Label Text="{Binding Apelido}" Font="Bold,Large" HorizontalOptions="Center" />
+                            <Image WidthRequest="200" HeightRequest="200" Source="{Binding UrlFoto}"/>
+                            <StackLayout Padding="50, 10">
+                                <StackLayout Orientation="Horizontal">
+                                    <Label Text="Nome:" HorizontalOptions="FillAndExpand" />
+                                    <Label Text="{Binding Nome}" Font="Bold,Medium" />
+                                </StackLayout>
+                                <StackLayout Orientation="Horizontal">
+                                    <Label Text="Nacionalidade:" HorizontalOptions="FillAndExpand" />
+                                    <Label Text="{Binding Nacionalidade}" Font="Bold,Medium" />
+                                </StackLayout>
+                                <StackLayout Orientation="Horizontal">
+                                    <Label Text="Natural de:" HorizontalOptions="FillAndExpand" />
+                                    <Label Text="{Binding Naturalidade}" Font="Bold,Medium" />
+                                </StackLayout>
+                                <StackLayout Orientation="Horizontal">
+                                    <Label Text="Idade:" HorizontalOptions="FillAndExpand" />
+                                    <Label Text="{Binding Idade}" Font="Bold,Medium" />
+                                </StackLayout>
+                                <StackLayout Orientation="Horizontal">
+                                    <Label Text="Clube atual:" HorizontalOptions="FillAndExpand" />
+                                    <Label Text="{Binding Clube}" Font="Bold,Medium" />
+                                </StackLayout>
+                            </StackLayout>
+                        </StackLayout>
+
+                    </ViewCell.View>
+                </ViewCell>
+
+            </DataTemplate>
+        </ListView.ItemTemplate>
+    </ListView>
+
+
+</ContentPage>
